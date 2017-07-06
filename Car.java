@@ -3,6 +3,24 @@ public class Car {
 String model;
 String color;
 String company;
+public String getModel() {
+	return model;
+}
+public void setModel(String model) {
+	this.model = model;
+}
+public String getColor() {
+	return color;
+}
+public void setColor(String color) {
+	this.color = color;
+}
+public String getCompany() {
+	return company;
+}
+public void setCompany(String company) {
+	this.company = company;
+}
 Car(String model, String color, String company)
 {
 	this.color=color;
@@ -17,5 +35,10 @@ System.out.println(c1.equals(c2));
 public boolean equals(Car c)
 {
 	return this.model.equals(c.model) && this.color.equals(c.color) && this.company.equals(c.company);
+
 }
+public int hashCode() {
+	return 7;
+}
+
 }
