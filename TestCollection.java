@@ -3,6 +3,7 @@ package neel;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class TestCollection {
@@ -22,4 +23,9 @@ public class TestCollection {
 		System.out.println("releasing");
 		cal=null;
 	}
+@Ignore
+public void tearUp()
+{
+	System.out.println("ignore");
+}
 }
