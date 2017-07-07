@@ -37,8 +37,8 @@ public boolean equals(Car c)
 	return this.model.equals(c.model) && this.color.equals(c.color) && this.company.equals(c.company);
 
 }
-public int hashCode() {
-	return 7;
-}
+//public int hashCode() {
+	//return 7;
+//}
 
 }
